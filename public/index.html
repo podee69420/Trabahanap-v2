@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabahanap - Find Local Workers in Baliwag, Bulacan</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="brand-name">Trabahanap</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#workers">Find Workers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-register" href="#register">Register as Worker</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="hero-title">Hanap ng Trabaho?<br>Hanap ng Worker?</h1>
+                    <p class="hero-subtitle">Connecting workers and customers in Baliwag, Bulacan</p>
+                    <p class="hero-description">
+                        Para sa mga construction workers, farmers, repair man, bakal bote, at iba pang skilled workers sa Baliwag, Bulacan
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#workers" class="btn btn-primary btn-lg me-3">Find a Worker</a>
+                        <a href="#register" class="btn btn-outline-primary btn-lg">I'm a Worker</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+            
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Ano ang Trabahanap?</h2>
+                <p class="section-subtitle">Your local job connection platform in Baliwag, Bulacan</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">👷</div>
+                        <h3>For Workers</h3>
+                        <p>Post your skills, experience, and contact info. Let customers find you easily!</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">🔍</div>
+                        <h3>For Customers</h3>
+                        <p>Find skilled workers in your barangay. View their experience and contact them directly.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">📍</div>
+                        <h3>Local Only</h3>
+                        <p>Focused on Baliwag, Bulacan area only. Support your local community!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workers Section -->
+    <section id="workers" class="workers-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Available Workers</h2>
+                <p class="section-subtitle">Browse workers by category and barangay</p>
+            </div>
+
+            <!-- Filter Section -->
+            <div class="filter-section mb-4">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Select Category:</label>
+                        <select class="form-select" id="categoryFilter">
+                            <option value="">All Categories</option>
+                            <option value="construction">Construction Worker</option>
+                            <option value="farmer">Farmer</option>
+                            <option value="repair">Repair Man</option>
+                            <option value="bakal">Bakal Bote</option>
+                            <option value="other">Others</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Select Barangay:</label>
+                        <select class="form-select" id="barangayFilter">
+                            <option value="bagong_nayon">Bagong Nayon</option>
+<option value="barangca">Barangca</option>
+<option value="calantipay">Calantipay</option>
+<option value="catulinan">Catulinan</option>
+<option value="concepcion">Concepcion</option>
+<option value="hinukay">Hinukay</option>
+<option value="makinabang">Makinabang</option>
+<option value="matangtubig">Matangtubig</option>
+<option value="pagala">Pagala</option>
+<option value="paitan">Paitan</option>
+<option value="piel">Piel</option>
+<option value="pinagbarilan">Pinagbarilan</option>
+<option value="poblacion">Poblacion</option>
+<option value="sabang">Sabang</option>
+<option value="san_jose">San Jose</option>
+<option value="san_roque">San Roque</option>
+<option value="santa_barbara">Santa Barbara</option>
+<option value="santo_cristo">Santo Cristo</option>
+<option value="santo_niño">Santo Niño</option>
+<option value="subic">Subic</option>
+<option value="sulivan">Sulivan</option>
+<option value="tangos">Tangos</option>
+<option value="tarcan">Tarcan</option>
+<option value="tiaong">Tiaong</option>
+<option value="tibag">Tibag</option>
+<option value="tilapayong">Tilapayong</option>
+<option value="vdf">Virgen de las Flores</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Workers List (This will be populated from backend) -->
+            <div class="row" id="workersList">
+                <!-- Sample Worker Card 1 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="worker-card">
+                        <div class="worker-category">Construction Worker</div>
+                        <h4 class="worker-name">Juan Dela Cruz</h4>
+                        <p class="worker-location">📍 Barangay Poblacion</p>
+                        <p class="worker-experience"><strong>Experience:</strong> 10 years sa construction</p>
+                        <p class="worker-specialty"><strong>Specialty:</strong> Carpentry, Masonry, Painting</p>
+                        <button class="btn btn-primary w-100">View Contact</button>
+                    </div>
+                </div>
+
+                <!-- Sample Worker Card 2 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="worker-card">
+                        <div class="worker-category">Farmer</div>
+                        <h4 class="worker-name">Maria Santos</h4>
+                        <p class="worker-location">📍 Barangay Sabang</p>
+                        <p class="worker-experience"><strong>Experience:</strong> 15 years farming</p>
+                        <p class="worker-specialty"><strong>Specialty:</strong> Rice farming, vegetable gardening</p>
+                        <button class="btn btn-primary w-100">View Contact</button>
+                    </div>
+                </div>
+
+                <!-- Sample Worker Card 3 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="worker-card">
+                        <div class="worker-category">Repair Man</div>
+                        <h4 class="worker-name">Pedro Reyes</h4>
+                        <p class="worker-location">📍 Barangay Tangos</p>
+                        <p class="worker-experience"><strong>Experience:</strong> 8 years repair work</p>
+                        <p class="worker-specialty"><strong>Specialty:</strong> Aircon, appliances, plumbing</p>
+                        <button class="btn btn-primary w-100">View Contact</button>
+                    </div>
+                </div>
+
+                <!-- Sample Worker Card 4 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="worker-card">
+                        <div class="worker-category">Bakal Bote</div>
+                        <h4 class="worker-name">Jose Garcia</h4>
+                        <p class="worker-location">📍 Barangay Conception</p>
+                        <p class="worker-experience"><strong>Experience:</strong> 5 years junk shop</p>
+                        <p class="worker-specialty"><strong>Specialty:</strong> Bakal, bote, scrap collection</p>
+                        <button class="btn btn-primary w-100">View Contact</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Register Section -->
+    <section id="register" class="register-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="register-card">
+                        <h2 class="text-center mb-4">Register as a Worker</h2>
+                        <p class="text-center mb-4">Fill out this form to list your services on Trabahanap</p>
+                        
+                        <form id="registerForm">
+                            <div class="mb-3">
+                                <label class="form-label">Full Name *</label>
+                                <input type="text" class="form-control" id="fullName" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Contact Number *</label>
+                                <input type="tel" class="form-control" id="contactNumber" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Barangay *</label>
+                                <select class="form-select" id="barangay" required>
+                                    <option value="">Select your barangay</option>
+                                    <option value="bagong-nayon">Bagong Nayon</option>
+                                    <option value="barangca">Barangca</option>
+                                    <option value="calantipay">Calantipay</option>
+                                    <option value="conception">Conception</option>
+                                    <option value="makinabang">Makinabang</option>
+                                    <option value="pagala">Pagala</option>
+                                    <option value="poblacion">Poblacion</option>
+                                    <option value="sabang">Sabang</option>
+                                    <option value="tangos">Tangos</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Job Category *</label>
+                                <select class="form-select" id="jobCategory" required>
+                                    <option value="">Select category</option>
+                                    <option value="construction">Construction Worker</option>
+                                    <option value="farmer">Farmer</option>
+                                    <option value="repair">Repair Man</option>
+                                    <option value="bakal">Bakal Bote</option>
+                                    <option value="other">Others</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Years of Experience *</label>
+                                <input type="number" class="form-control" id="experience" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Your Specialty/Skills *</label>
+                                <textarea class="form-control" id="specialty" rows="3" placeholder="Example: Carpentry, welding, house repair..." required></textarea>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Additional Information (Optional)</label>
+                                <textarea class="form-control" id="additionalInfo" rows="3" placeholder="Any other details customers should know..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-lg w-100">Submit Registration</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Trabahanap</h5>
+                    <p>Connecting workers and customers in Baliwag, Bulacan</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">&copy; 2025 Trabahanap. All rights reserved.</p>
+                    <p class="mb-0">Baliwag, Bulacan</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
